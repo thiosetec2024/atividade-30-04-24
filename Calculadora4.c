@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include<locale.h>
 
-int main() {
+ main() {
     setlocale(LC_ALL , "Portuguese");
     char operador;
     float num1, num2, resultado;
@@ -11,8 +11,8 @@ int main() {
 
     do {
                 printf(" _______________________________________________\n");
-            	printf("|                  CALCULADORA                  |\n");
-                printf("|                    THIAGO                     |\n");
+            	printf("|               CALCULADORA DO                  |\n");
+                printf("|                   THIAGO                      |\n");
                 printf("|_______________________________________________|\n");
         printf("\n" );
 
@@ -27,7 +27,7 @@ int main() {
             	printf(" |>>>>>>>>>>>>>>>>>>>ATENÇÃO<<<<<<<<<<<<<<<<<<<<<|\n");
                 printf(" |       Favor informar apenas numeros!!!!       |\n");
                 printf(" |_______________________________________________|\n");
-                fflush(stdin); 
+               
             }
         } while (validar1 != 1);
 
@@ -63,7 +63,7 @@ int main() {
             	printf("|>>>>>>>>>>>>>>>>>>>ATENÇÃO<<<<<<<<<<<<<<<<<<<<<|\n");
                 printf("|       Favor informar apenas numeros!!!!       |\n");
                 printf("|_______________________________________________|\n");
-                    fflush(stdin); 
+                     
                 }
             } while (validar2 != 1);
 
