@@ -4,16 +4,18 @@
 
 
 int main() {
-    char operador;
+	setlocale(LC_ALL , "Portuguese");
+    char operador, continuar;
     float num1, num2, resultado;
-
-    printf("Digite um numero números: ");
+   
+    do {
+	printf("Digite um operador (+, -, *, /): ");
+    scanf("%c", &operador);
+   
+    printf("Digite um numero: ");
     scanf("%f", &num1);
 
-    printf("Digite um operador (+, -, *, /): ");
-    scanf("%c", &operador);
-
-    printf("Digite dois números: ");
+    printf("Digite outro numero: ");
     scanf("%f", &num2);
         
     switch (operador) {
@@ -27,34 +29,33 @@ int main() {
             resultado = num1 * num2;
             break;
         case '/':
-            
+           
             if (num2 == 0) {
-                printf(" Divisão por zero não é permitida.");
-                return 1; 
+            	
+            	             	 
+                printf(" Divisao por zero nao  permitida.");
+                
             } else {
                 resultado = num1 / num2;
             }
             break;
         default:
-            printf("Operador inválido!");
-            return 1; 
+            printf("Operador invalido!");
+            return 01;
     }
     
     printf("Resultado: %.2f\n", resultado);
-
+    
+    printf("Gostaria de continuar calculando S / N : ");
+     scanf(" %c" , &continuar);
+	 
+	} while (continuar =='S' , continuar == 's');
+	 
+	 printf ("Calculadora Finalizada \n ");
+   
     return 0;
 }
-      
-      
-      
-      	
-	  (n1 = n1 * n2);
-	if (n1 == 0)
-	  printf("Não é possível multiplicar por 0 !");
-	else 
-	  printf("A multiplicação dos números fornecidos é igual a: %d", n1);
 
-}
 	   
    
 
